@@ -14,7 +14,8 @@ marked.setOptions({
 
   sanitize: false,
   smartLists: true,
-  langPrefix: ''
+  langPrefix: '',
+  mathDelimiters: [['$', '$'], ['\\(', '\\)'], ['\\[', '\\]'], ['$$', '$$'], 'beginend']
 });
 
 converter.convertMarkdown = function (content, links, inline) {
